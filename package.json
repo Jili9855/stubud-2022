@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Jili9855/stubud-2022/issues"
   },
-  "homepage": "https://github.com/Jili9855/stubud-2022#readme"
+  "homepage": "https://github.com/Jili9855/stubud-2022#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
