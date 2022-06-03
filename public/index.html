@@ -1,17 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Hello, world!</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="" />
-  <link rel="icon" href="img/favicon.png">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Hello, world!</h1>
-</body>
+<html>
 
-<script src="script.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="scss/main.scss" rel="stylesheet" type="text/css">
+</head>
+
+<body class="app-container">
+
+    <!-- <nav class="vertical top-nav">
+        <ul class="nav-links">
+            <li class="nav-item"><a href="index.html" class="active">Home</a></li>
+            <li class="nav-item"><a href="tasklist.html">Tasks</a></li>
+            <li class="nav-item"><a href="music.html">Music</a></li>
+        </ul>
+    </nav>
+
+    <div id="home" class="page-container">
+        <h1>30 Days</h1>
+        <p>Tis is a Web App to help you learning the foreign language</p>
+    </div> -->
+
+
+
+
+<!-- Navbar reference from https://codepen.io/areal_alien/pen/BaRpxdX -->
+<nav id="navbar">
+  <ul class="navbar-items flexbox-col">
+    <li class="navbar-logo flexbox-left">
+    </li>
+    <li class="navbar-item flexbox-left">
+      <a class="navbar-item-inner flexbox-left">
+        <div class="navbar-item-inner-icon-wrapper flexbox">
+        </div>
+        <span class="link-text"><a href="index.html">Home</a></span>
+      </a>
+    </li>
+   
+    <li class="navbar-item flexbox-left">
+      <a class="navbar-item-inner flexbox-left">
+        <div class="navbar-item-inner-icon-wrapper flexbox">
+        </div>
+        <span class="link-text"><a href="tasklist.html">Task</a></span>
+      </a>
+    </li>
+   
+    <li class="navbar-item flexbox-left">
+      <a class="navbar-item-inner flexbox-left">
+        <div class="navbar-item-inner-icon-wrapper flexbox">
+        </div>
+        <span class="link-text"><a href="music.html">Music</a></span>
+      </a>
+    </li>
+
+    <li class="navbar-item flexbox-left">
+      <a class="navbar-item-inner flexbox-left">
+        <div class="navbar-item-inner-icon-wrapper flexbox">
+        </div>
+        <span class="link-text"><a href="about.html">About</a></span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Main text of the website -->
+<main id="main" class="flexbox-col">
+  <h1>30 Days</h1>
+  <h2>The Web App of help you study </h2>
+  <p>The idea of this website is help you promote your learning habits. You can set your individual task and track your study process.</p>
+</main>
+
+<!-- the boxes
+<div class="boxes">
+  <div class="card">
+    <h2 class="cardname">One Popular Course</h2>
+    <p class="cardnum">0 %</p>
+  </div>
+
+  <div class="card">
+    <h2 class="cardname">worked This Week</h2>
+    <p class="cardnum">40:00:05</p>
+  </div> -->
+  
+
+
+<div class="cards">
+  <article class="card">
+    <border>
+      <header>
+          <h2 class="cardhead">Popular Courses</h2>
+      </header>    
+      <div class="content">
+          <p>These are the recommend courses base o your previouse study habits</p>
+      </div>
+    </border>     
+  </article>
+          
+   <article class="card">
+      <header>
+          <h2 class="cardhead">Work This Week</h2>
+      </header>    
+      <!-- <img src="balloons2.jpg" alt="Hot air balloons"> -->
+      <div class="content">
+          <p class="cardtext">This week task with pictures to help you memorable</p>
+      </div>>
+  </article>
+          
+  <article class="card">
+      <header>
+          <h2 class="cardhead">Completed Task</h2>
+      </header>
+      <div class="content">
+          <p class="cardtext">Gret work, you have completed these tasks</p>
+      </div>
+  </article>
+  <article class="card">
+      <header>
+          <h2 class="cardhead">To DO List</h2>
+      </header>
+      <div class="content">
+          <p class="cardtext"> Create new list </p>
+      </div>
+
+  </article>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js">
+    </script>
+</body>
 
 </html>
