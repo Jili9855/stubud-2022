@@ -2,9 +2,11 @@
   "name": "stubud-2022",
   "version": "1.0.0",
   "description": "Web application for studying",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build ./public/index.html",
+    "dev": "parcel serve ./public/index.html"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,12 @@
   "homepage": "https://github.com/Jili9855/stubud-2022#readme",
   "dependencies": {
     "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "autoprefixer": "^10.4.7",
+    "parcel": "^2.6.0",
+    "postcss": "^8.4.14",
+    "sass": "^1.52.1"
   }
 }
