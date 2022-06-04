@@ -346,13 +346,13 @@ h3, h4, h5, h6 {
   display: grid;
 }
 
-#taskform {
+#taskforms {
   max-width: 300px;
   grid-area: taskform;
   margin: 0 auto;
 }
 
-#taskform label {
+#taskforms label {
   width: 100%;
   display: block;
 }
@@ -493,27 +493,12 @@ h3, h4, h5, h6 {
   }
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  height: 100vh;
-  background-image: linear-gradient(0deg, #dbdbdb 23.8%, #1a7bdc 92%);
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  font-family: Lato, sans-serif;
-  display: flex;
-}
-
 .music-container {
   box-shadow: 0 20px 20px 0 #1a7bdc 92%;
   z-index: 10;
   background-color: #fff;
   border-radius: 15px;
-  margin: 100px 0;
+  margin: 100px;
   padding: 20px 30px;
   display: flex;
   position: relative;
