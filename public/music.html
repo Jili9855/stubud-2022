@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <title>Music Player</title>
     <link href="scss/main.scss" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
 </head>
 
 <body>
@@ -61,74 +61,35 @@
 
 
 
-<!-- the music player refernecen from:
-https://www.codingnepalweb.com/create-music-player-in-javascript/
-By CodingNepal -May 11, 2021-->
-<div class="wrapper">
-  <div class="top-bar">
-    <i class="material-icons">expand_more</i>
-    <span>Now Playing</span>
-    <i class="material-icons">more_horiz</i>
-  </div>
-  <div class="img-area">
-    <img src="album_img/music1.jpg" alt="Finzy Kontini">
-  </div>
-  <div class="song-details">
-    <p class="name">ChaChaCha - Place To Place</p>
-    <p class="artist">Finzy Kontini</p>
-  </div>
-  <div class="progress-area">
-    <div class="progress-bar">
-      <audio id="main-audio" src="./song/music1.mp3"></audio>
-    </div>
-    <div class="song-timer">
-      <span class="current-time">0:00</span>
-      <span class="max-duration">4:47</span>
+ <!-- the music player refernecen from: 
+https://github.com/bradtraversy/vanillawebprojects-->
+<h1>Music Player Tool</h1>
+
+<div class="music-container" id="music-container">
+  <div class="music-info">
+    <h4 id="title"></h4>
+    <div class="progress-container" id="progress-container">
+      <div class="progress" id="progress"></div>
     </div>
   </div>
-  <div class="controls">
-    <i id="repeat-plist" class="material-icons">repeat</i>
-    <i id="prev" class="material-icons">skip_previous</i>
-    <div class="play-pause">
-      <i class="material-icons play">play_arrow</i>
-    </div>
-    <i id="next" class="material-icons">skip_next</i>
-    <i id="more-music" class="material-icons">queue_music</i>
+
+  <audio src="song/music1.mp3" id="audio"></audio>
+
+  <div class="img-container">
+    <img src="album_img/music1.jpg" alt="music-cover" id="cover" />
   </div>
-  <div class="music-list">
-    <div class="header">
-      <div class="row">
-        <i class= "list material-icons">queue_music</i>
-        <span>Music list</span>
-      </div>
-      <i id="close" class="material-icons">close</i>
-    </div>
-    <ul>
-      <!-- here li list are coming from js -->
-      <li>
-        <div class="row">
-          <span>Ikson Anywhere - Ikson</span>
-          <p>Audio Library</p>
-        </div>
-        <span class="audio-duration">4:47</span>
-      </li>
-      <li>
-        <div class="row">
-          <span>Ikson Anywhere - Ikson</span>
-          <p>Audio Library</p>
-        </div>
-        <span class="audio-duration">4:47</span>
-      </li>
-      <li>
-        <div class="row">
-          <span>Ikson Anywhere - Ikson</span>
-          <p>Audio Library</p>
-        </div>
-        <span class="audio-duration">4:47</span>
-      </li>
-    </ul>
+  <div class="navigation">
+    <button id="prev" class="action-btn">
+      <i class="fas fa-backward"></i>
+    </button>
+    <button id="play" class="action-btn action-btn-big">
+      <i class="fas fa-play"></i>
+    </button>
+    <button id="next" class="action-btn">
+      <i class="fas fa-forward"></i>
+    </button>
   </div>
-</div>
+</div
 
 
 
@@ -137,6 +98,5 @@ By CodingNepal -May 11, 2021-->
 
 
   <script src="script.js"></script>
-  <script src="music-list.js"></script>
 </body>
 </html>
