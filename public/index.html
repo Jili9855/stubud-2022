@@ -8,24 +8,6 @@
     <link href="scss/main.scss" rel="stylesheet" type="text/css">
 </head>
 
-<body class="app-container">
-
-    <!-- <nav class="vertical top-nav">
-        <ul class="nav-links">
-            <li class="nav-item"><a href="index.html" class="active">Home</a></li>
-            <li class="nav-item"><a href="tasklist.html">Tasks</a></li>
-            <li class="nav-item"><a href="music.html">Music</a></li>
-        </ul>
-    </nav>
-
-    <div id="home" class="page-container">
-        <h1>30 Days</h1>
-        <p>Tis is a Web App to help you learning the foreign language</p>
-    </div> -->
-
-
-
-
 <!-- Navbar reference from https://codepen.io/areal_alien/pen/BaRpxdX -->
 <nav id="navbar">
   <ul class="navbar-items flexbox-col">
@@ -65,66 +47,71 @@
   </ul>
 </nav>
 
+
+<!-- cards reference from https://github.com/jpmersuglia/responsive-cards-layout.git-->
 <!-- Main text of the website -->
-<main id="main" class="flexbox-col">
+<div class="mainheader">
   <h1>30 Days</h1>
   <h2>The Web App of help you study </h2>
-  <p>The idea of this website is help you promote your learning habits. You can set your individual task and track your study process.</p>
-</main>
+  <p>30 Days could help you promote your learning habits. You can set your individual task and track your study process.</p>
+</div>
 
-<!-- the boxes
-<div class="boxes">
+<!-- cards layout -->
+<div class="container">
+  <!-- Card #1 -->
   <div class="card">
-    <h2 class="cardname">One Popular Course</h2>
-    <p class="cardnum">0 %</p>
+      <div class="card-header">
+          <img src="picture/weektask.jpg" alt="weektask">
+      </div>
+      <div class="card-body">
+          <span class="tag tag-teal">RECENTLY</span>
+          <h4>Follow previous learning process</h4>
+          <p>Knowledge needs to be practiced over and over again to deepen your memory, otherwise you will easily forget it</p>
+      </div>
+      <div class="user">
+        <img src="picture/weektask.jpg" alt="weektask">
+          <div class="user-info">
+              <h5>Jay</h5>
+              <small>2h ago</small>
+          </div>
+      </div>
   </div>
-
+  <!-- Card #2 -->
   <div class="card">
-    <h2 class="cardname">worked This Week</h2>
-    <p class="cardnum">40:00:05</p>
-  </div> -->
-  
-
-
-<div class="cards">
-  <article class="card">
-    <border>
-      <header>
-          <h2 class="cardhead">Popular Courses</h2>
-      </header>    
-      <div class="content">
-        <span class="title">These are the recommend courses base o your previouse study habits</span>
+      <div class="card-header">
+          <img src="./picture/course.jpg" alt="online course">
       </div>
-    </border>     
-  </article>
-          
-   <article class="card">
-      <header>
-          <h2 class="cardhead">Work This Week</h2>
-      </header>    
-      <!-- <img src="balloons2.jpg" alt="Hot air balloons"> -->
-      <div class="content">
-        <span class="title">This week task with pictures to help you memorable</span>
-      </div>>
-  </article>
-          
-  <article class="card">
-      <header>
-          <h2 class="cardhead">Completed Task</h2>
-      </header>
-      <div class="content">
-        <span class="title">Great work, you have completed these tasks</span>
+      <div class="card-body">
+          <span class="tag tag-purple">POPULAR</span>
+          <h4>How to Keep Going When You Don't Know What's Next?</h4>
+          <p>Here are some popular and recommend learning plans suggest</p>
       </div>
-  </article>
-  <article class="card">
-      <header>
-          <h2 class="cardhead">To DO List</h2>
-      </header>
-      <div class="content">
-        <span class="title">Greate new list </span>
+      <div class="user">
+          <!-- <img src="./images/user-2.jpg" alt=""> -->
+          <div class="user-info">
+              <h5>Jay</h5>
+              <small>Yesterday</small>
+          </div>
       </div>
-
-  </article>
+  </div>
+  <!-- Card #3 -->
+  <div class="card">
+      <div class="card-header">
+          <img src="./picture/Multitasking.jpg" alt="owntask">
+      </div>
+      <div class="card-body">
+          <span class="tag tag-pink">OWN</span>
+          <h4>Create own learning tasks</h4>
+          <p>Track, manage, and connect your projects across any team with 30 Days. Get started for free.</p>
+      </div>
+      <div class="user">
+          <!-- <img src="./images/user-3.jpg" alt=""> -->
+          <div class="user-info">
+              <h5>Jay</h5>
+              <small>28 Mins Ago</small>
+          </div>
+      </div>
+  </div>
 </div>
 
 
