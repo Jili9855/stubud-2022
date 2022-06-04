@@ -1,0 +1,154 @@
+/*
+ this is the hompage cards layout, reference from https://github.com/jpmersuglia/responsive-cards-layout.git
+*/
+
+
+*{
+    box-sizing: border-box;
+}
+
+// body{
+//     background-color: #fff;
+//     font-family: Arial, Helvetica, sans-serif;
+//     margin: 0;
+// }
+
+.mainheader{
+    margin: auto;
+    width: 50%;
+    margin-top: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.container{
+    display: flex;
+    margin-left: 100px;
+    margin-right: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 25px;
+}
+
+.card-body{
+    padding: .2em .2em;
+    margin: .1em .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.user{
+    padding: .1em .1em; 
+    margin-top: auto;
+    display: flex;
+    height: 1em;
+    margin-bottom: 5px;
+}
+
+.user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border-bottom: 10px;
+}
+
+
+.user-info {
+    padding: 0 5px;
+    height: 4em;
+    margin: 0px .5em;
+    // bottom: 5em;
+}
+
+.user-info h5{
+    margin-right: 10px;
+    margin-bottom: 3px;
+    font-size: 20px;
+}
+
+.user-info small{
+    color: #3a17eb;
+}
+
+
+.card {
+    overflow: auto;  /*If the card content is trimmed, the browser displays a scroll bar to view the rest of the content*/
+    background-color: rgba(255, 255, 255, 0.586);
+    border-radius: 20px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.491);
+    top: 150px;;
+}
+
+//the card will change text and background color when mouse put on the cards
+.card:hover{
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+    color:#fff; //text color will change
+}
+
+
+.card-header img{
+    width: 100%;
+    height: 290px;  // the card header image size
+    object-fit: cover;
+}
+
+.tag{
+    background: #777;
+    border-radius: 12px;
+    margin: 0;
+    color: #fff;
+    padding: 2px 5px;
+    font-size: .7em;
+    text-transform: capitalize;
+}
+
+.tag-red{
+    background-color: #e492a8;
+
+}
+
+.tag-blue{
+    background-color: #380ade;
+    
+}
+
+.tag-orange{
+    background-color: #de730f;
+
+}
+
+.card-body h4{
+    font-size: 18px;
+    margin: 3px 0;
+}
+
+.card-body p{
+    font-size: 13px;
+    margin: 0 0 0px;
+    line-height: 25px;
+}
+
+@media (min-width: 740px){
+    .body{
+        height: 100vh;
+    }
+    //Set the distance between the card and the mainheader
+    .container{
+        padding-top: 15px;
+        grid-template-columns: repeat(3, 1.5fr);
+    }
+    //the card width and height setting
+    .card{
+        width: 100%;
+        height: 500px;
+        // object-fit: cover;
+    }
+}
