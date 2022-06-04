@@ -9,49 +9,13 @@
 </head>
 
 
-<body class="app-container">
-    <div class="mainheader"
-        <h1>Create New Task</h1>
-            <div id="task-grid">
-                <form id="taskforms">
-                    <label for="task">Task Name:</label>
-                    <input type="text" name="task" id="taskInput" required>
+<body>
 
-                    <!-- Date input -->
-                    <label for="dueDate">Due Date: </label>
-                    <input type="date" name="dueDate" id="dueDateInput">
+<!-- the main header of task page -->
+<h4 id="taskhead">Create New Task</h4>
 
-                    <!-- Time input -->
-                    <label for="completionTime">Completion Time: </label>
-                    <input type="time" name="completionTime" id="completionTimeInput">
-
-                    <label for="estimatedTime">Estimated completion time (in mins):</label>
-                    <input type="number" name="estimatedTime" id="estimatedTimeInput">
-                    
-                    
-                    <!-- Priority -->
-                    <label for="priority">Task Priority:</label>
-                    <select name="prority" id="priorityInput">
-                        <option value="">Select one</option>
-                        <option value="Low">Low</option>
-                        <option value="Medium">Medium</option>
-                        <option value="High">High</option>
-                    </select>
-                    <br>
-                    <button type="submit">Submit</button>
-                </form>
-                <div id="tasklist">
-                    <p id="emptyList">You have not added any tasks yet.</p>
-                    <ul></ul>
-                </div>
-            </div>
-    </div>
-
-
-
-
-    <!-- Navbar reference from https://codepen.io/areal_alien/pen/BaRpxdX -->
-<nav id="navbar">
+  <!-- Navbar reference from https://codepen.io/areal_alien/pen/BaRpxdX -->
+  <nav id="navbar">
     <ul class="navbar-items flexbox-col">
       <li class="navbar-logo flexbox-left">
       </li>
@@ -64,7 +28,7 @@
           </a>
           </span>
       </li>
-     
+    
       <li class="navbar-item flexbox-left">
           <div class="navbar-item-inner-icon-wrapper flexbox">
           </div>
@@ -74,7 +38,7 @@
             </a>
           </span>
       </li>
-     
+    
       <li class="navbar-item flexbox-left">
           <div class="navbar-item-inner-icon-wrapper flexbox">
           </div>
@@ -99,8 +63,54 @@
 
 
 
-    <script src="script.js">
-    </script>
+  <!-- the to do task list to let user create their own tasks -->
+    <div class="cardlayout">
+            <div id="task-grid">
+                <form id="taskforms">
+                    <label for="task">Task Name:</label>
+                    <input type="text" name="task" id="taskInput" required>
+
+                    <!-- Date input -->
+                    <label for="dueDate">Due Date: </label>
+                    <input type="date" name="dueDate" id="dueDateInput">
+
+                    <!-- Time input -->
+                    <label for="completionTime">Completion Time: </label>
+                    <input type="time" name="completionTime" id="completionTimeInput">
+
+                    <label for="estimatedTime">Estimated completion time (in mins):</label>
+                    <input type="number" name="estimatedTime" id="estimatedTimeInput">
+                    
+                    <!-- Priority -->
+                    <label for="priority">Task Priority:</label>
+                    <select name="prority" id="priorityInput">
+                        <option value="">Select one</option>
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="tasklist">
+                    <p id="emptyList">You have not added any tasks yet.</p>
+                    <ul>
+
+                    </ul>
+                    <button type="button" id="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+  
+
+
+
+    <script src="script.js"></script>
+    <script src="./scss/components/tasklist.js"></script>
 </body>
 
 </html>

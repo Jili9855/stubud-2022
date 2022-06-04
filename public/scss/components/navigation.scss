@@ -184,9 +184,7 @@ html, body {
       width: 8px;
       background-color: hsl(var(--background-secondary));
   }
-//   #navbar::-webkit-scrollbar-thumb {
-//       background-color: hsl(var(--primary));
-//   }
+
   .navbar-items {
       margin: 0;
       padding: 0;
@@ -208,11 +206,7 @@ html, body {
       text-decoration: none;
       transition: all .2s cubic-bezier(var(--transition-main), 1);
   }
-//   .navbar-item-inner:hover {
-//       color: hsl(var(--white));
-//       background: hsl(var(--background-secondary-light));
-//       box-shadow: 0 17px 30px -10px hsla(var(--white), .25);
-//   }
+
   .navbar-item-inner-icon-wrapper {
       width: calc(3rem - 1em - 8px);
       position: relative;

@@ -10,7 +10,7 @@ var priorityInput = document.getElementById("priorityInput");
 
 form.addEventListener("submit", function(event){
   event.preventDefault();
-  let task = taskInput.value;
+  let name  = taskInput.value;  //let name = id.value
   let dueDate = dueDateInput.value;
   let completionTime = completionTimeInput.value;
   let estimatedTime = estimatedTimeInput.value;
@@ -60,5 +60,9 @@ function renderTask(task){
 
 
   // Clear the input form
-  form.reset();
+//   form.reset();
+// }
+
+function myFunction() {
+  document.getElementById("reset").reset();
 }
