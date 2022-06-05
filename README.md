@@ -172,6 +172,96 @@ Once the input is incorrect, javascript will run those function an error message
   }
 ```
 
+* __Music Player__
+
+The music player is the biggest challenge for me. Even though I reference the tutorial video of [Traversy Media](https://youtu.be/QTHRWGn_sJw) but my file still can't run the javascript file. It can't play the music. However, it can play music but the music container position and size can't 
+automatically adapats to my screen size changes I still can't fig it out, maybe is due to somewhere I use the goloablt value. I will try to fix it in the future.
+
+The code of control switching music. Firstly create a music container which is including the music title, the progress bar, the previous, play, next button icons.
+
+```html
+<div class="music-container" id="music-container">
+  <div class="music-info">
+    .......
+    </div>
+  </div>
+
+  <audio src="song/music1.mp3" id="audio1" class="audio"></audio>
+
+  <div class="img-container">
+    <img src="album_img/music1.jpg" alt="music-cover" class="cover" />
+        .......
+  </div>
+
+  /*the navigation of the music*/
+  <div class="navigation">
+    <button id="prev" class="action-btn">
+      <i class="fas fa-backward"></i>
+    </button>
+    <button id="play" class="action-btn action-btn-big">
+      <i class="fas fa-play"></i>
+    </button>
+    <button id="next" class="action-btn">
+      <i class="fas fa-forward"></i>
+    </button>
+  </div>
+</div>
+```
+
+
+Then create a list to stored the music gona be played. Then write a function to index the list.
+
+```javascript
+let musicName = [
+    'ChaChaCha - Place To Place',
+    'The Bohannon Walk - Bohannon',
+    'I Want To Break Free - Greatest Hits II',
+]
+actionBtn.onclick = function(){
+    musicState = !musicState
+    if(!musicState){
+        for(let i = 0; i < audio.length; i++){
+            audio[i].pause()
+        }
+        return
+    }
+    for(let i = 0; i < audio.length; i++){
+        audio[i].pause()
+        cover[i].style.display = 'none'
+    }
+    cover[musicIndex].style.display = 'block'
+    audio[musicIndex].play()
+    title.innerText = musicName[musicIndex]
+}
+actionBtnAll[0].onclick = function(){
+    for(let i = 0; i < audio.length; i++){
+        audio[i].pause()
+        cover[i].style.display = 'none'
+    }
+    if(musicIndex == 0){
+        musicIndex = 2
+    }else{
+        musicIndex = musicIndex - 1
+    }
+    audio[musicIndex].play()
+    cover[musicIndex].style.display = 'block'
+    title.innerText = musicName[musicIndex]
+}
+actionBtnAll[2].onclick = function(){
+    for(let i = 0; i < audio.length; i++){
+        audio[i].pause()
+        cover[i].style.display = 'none'
+    }
+    if(musicIndex == 2){
+        musicIndex = 0
+    }else{
+        musicIndex = musicIndex + 1
+    }
+    audio[musicIndex].play()
+    cover[musicIndex].style.display = 'block'
+    title.innerText = musicName[musicIndex]
+}
+```
 
 
 ### Reference (APA6th)
@@ -181,11 +271,15 @@ Once the input is incorrect, javascript will run those function an error message
 
   Bohannon. (n.d.). 网易云音乐. Retrieved June 5, 2022, from 网易云音乐 website: https://music.163.com/#/song?id=2714997
 
+  bradtraversy. (2021, April 15). vanillawebprojects/music-player at master · bradtraversy/vanillawebprojects. Retrieved June 5, 2022, from GitHub website: https://github.com/bradtraversy/vanillawebprojects/tree/master/music-player
+
   Cha Cha Cha. (n.d.). Retrieved June 5, 2022, from Discogs website: https://www.discogs.com/release/572435-Finzy-Kontini-Cha-Cha-Cha
 
   Chengjun.L. (2021, April 23). 数据验证——使用示例 javascript 代码检查 HTML 表单上的用户输入. FreeCodeCamp.Org. Retrieved from https://chinese.freecodecamp.org/news/form-validation-with-html5-and-javascript/
 
   jpmersuglia. (2020, September 2). Build software better, together. Retrieved June 5, 2022, from GitHub website: https://github.com/jpmersuglia/responsive-cards-layout/projects?type=beta
+
+  Media, T. (2021). Build a music player [Video]. Retrieved from https://www.youtube.com/watch?v=QTHRWGn_sJw
 
   Queen   I want to break free.mp3. (n.d.). Retrieved June 5, 2022, from Google Docs website: https://docs.google.com/file/d/0B0oHLwB1TKEmSG5fM3VhVUhLQjg/view?resourcekey=0-FmMQQr1Dwx_TOuVeXGObig
 

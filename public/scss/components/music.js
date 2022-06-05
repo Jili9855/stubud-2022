@@ -1,3 +1,6 @@
+// control the music play and pause, next and pev song 
+
+// Select all the elements in the music.html page and assign them to a variable
 let cover = document.querySelectorAll(".cover")
 let audio = document.querySelectorAll(".audio")
 let title = document.getElementById("title")
@@ -5,6 +8,7 @@ let actionBtnAll = document.querySelectorAll(".action-btn")
 let actionBtn = document.querySelector(".action-btn-big")
 let musicIndex = 0
 let musicState = false
+// Define the list of music that be played
 let musicName = [
     'ChaChaCha - Place To Place',
     'The Bohannon Walk - Bohannon',
