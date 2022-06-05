@@ -9,7 +9,7 @@ This software is designed for promote learning habits. Users allow to set and pr
 
 
 ## Change of design brief
-My original idea in the previous design brief was to design a language learning software where the user could look up words using a dictionary and set time tracking to help them more concentration. However, I delete the time tracking idea, I thought if users who want to set study times, I think they may prefer to use them on their mobile phones rather than the web side. Thus, the final web application will be more focus on task management and music player those two features.
+My original idea in the previous design brief was to design a language learning software where the user could look up words using a dictionary and set time tracking to help them more concentration. However, I change the time tracking idea, the focus timer was originally designed to allow users to focus more on their studies.  However if there is a countdown clock it might increase anxiety, so I thought a good learning method should without the stress, you can start or finish at any time, and seeing each increase in focus time is like seeing progress every day.
 
 * __screenshot of the layout change__
 
@@ -20,7 +20,7 @@ new layout
 ![image](./readmeimg/2.png)
 
 
-## Dode Description
+## Code Description
 
 the detail description of the code I use
 The basic framework of the website I refer to some templates, refer to the following websites [CODEPEN](https://codepen.io/trending)
@@ -263,6 +263,15 @@ actionBtnAll[2].onclick = function(){
 }
 ```
 
+## How To Use
+User can create thir own learning task by setting task name, completion time and setting priority
+![image](./readmeimg/4.png)
+and then listen the music to get relaxed
+![image](./readmeimg/5.png)
+The focus timer was designed to allow users to focus more on their studies without the stress and pressure of a countdown, you can start or finish at any time. User can seeing their focus time when they press stop.
+![image](./readmeimg/3.png)
+
+
 
 ### Reference (APA6th)
   3D form validation. (n.d.). Retrieved June 5, 2022, from CodePen website: https://codepen.io/soulrider911/pen/DdeGao
@@ -276,6 +285,10 @@ actionBtnAll[2].onclick = function(){
   Cha Cha Cha. (n.d.). Retrieved June 5, 2022, from Discogs website: https://www.discogs.com/release/572435-Finzy-Kontini-Cha-Cha-Cha
 
   Chengjun.L. (2021, April 23). 数据验证——使用示例 javascript 代码检查 HTML 表单上的用户输入. FreeCodeCamp.Org. Retrieved from https://chinese.freecodecamp.org/news/form-validation-with-html5-and-javascript/
+
+  Freepik. (n.d.). Retrieved June 5, 2022, from Freepik website: https://www.freepik.com/home
+
+  GSPTeck. (2020, December 14). Create a Stopwatch in javascript. DEV Community. Retrieved from https://dev.to/gspteck/create-a-stopwatch-in-javascript-2mak
 
   jpmersuglia. (2020, September 2). Build software better, together. Retrieved June 5, 2022, from GitHub website: https://github.com/jpmersuglia/responsive-cards-layout/projects?type=beta
 

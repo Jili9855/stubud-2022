@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Music Player</title>
+    <title>timetrack</title>
     <link href="scss/main.scss" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
 </head>
 
 <body>
+
 <!-- Navbar reference from https://codepen.io/areal_alien/pen/BaRpxdX -->
 <nav id="navbar">
     <ul class="navbar-items flexbox-col">
@@ -54,7 +54,7 @@
             </a>
           </span>
       </li>
-      
+  
       <li class="navbar-item flexbox-left">
         <div class="navbar-item-inner-icon-wrapper flexbox">
         </div>
@@ -64,53 +64,22 @@
           </a>
         </span>
     </li>
-
     </ul>
   </nav>
-
-
- <!-- the music player refernecen from: 
-  https://github.com/bradtraversy/vanillawebprojects/tree/master/music-player
--->
-<h1 id="musicheader">Music Player Tool</h1>
-
-<div class="music-container" id="music-container">
-  <div class="music-info">
-    <div id="title" class="musName">ChaChaCha - Place To Place</div>
-    <div class="progress-container" id="progress-container">
-      <div class="progress" id="progress"></div>
+    
+  <h1 id="timeheader">Focusing Time</h1>
+    <div id="stopwatch">
+        00:00:00
     </div>
-  </div>
 
-  <audio src="song/music1.mp3" id="audio1" class="audio"></audio>
-  <audio src="song/music2.mp3" id="audio2" class="audio"></audio>
-  <audio src="song/music3.mp3" id="audio3" class="audio"></audio>
+    <ul id="buttons">
+        <li><button onclick="start()">Start</button></li>
+        <li><button onclick="stop()">Stop</button></li>
+        <li><button onclick="reset()">Reset</button></li>
+    </ul>
 
-  <div class="img-container">
-    <img src="album_img/music1.jpg" alt="music-cover" class="cover" />
-    <img src="album_img/music2.jpg" style="display: none" alt="music-cover" class="cover" />
-    <img src="album_img/music3.jpg" style="display: none" alt="music-cover" class="cover" />
-  </div>
-  <div class="navigation">
-    <button id="prev" class="action-btn">
-      <i class="fas fa-backward"></i>
-    </button>
-    <button id="play" class="action-btn action-btn-big">
-      <i class="fas fa-play"></i>
-    </button>
-    <button id="next" class="action-btn">
-      <i class="fas fa-forward"></i>
-    </button>
-  </div>
-</div>
-
-
-
-
-
-
-<script src="scss/components/music.js"></script>
-
-  <script src="script.js"></script>
+    <script src="scss/components/time.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
