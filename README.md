@@ -1,1 +1,3 @@
-# stubud-2022
+# 30 Days - A learning Web Application
+
+

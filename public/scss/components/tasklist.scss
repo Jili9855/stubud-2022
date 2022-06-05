@@ -9,15 +9,15 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "taskform tasklist";
-    // justify-content: center;
+    justify-content: center;
 }
 
 #taskforms {
     grid-area: taskform;
-    width: 100%;
+    width: 300px;
     label {
         display: grid;
-        width: 100%;
+        width: 100px;
         padding: 10px;
         margin: auto;
     }
