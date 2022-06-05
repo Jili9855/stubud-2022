@@ -1,3 +1,5 @@
+/*reference from tutorial */
+
 const form = document.getElementById("taskform");
 const button = document.querySelector("#taskform > button")
 var taskInput = document.getElementById("taskInput");
@@ -10,7 +12,7 @@ var priorityInput = document.getElementById("priorityInput");
 
 form.addEventListener("submit", function(event){
   event.preventDefault();
-  let name  = taskInput.value;  //let name = id.value
+  let name  = taskInput.value;  
   let dueDate = dueDateInput.value;
   let completionTime = completionTimeInput.value;
   let estimatedTime = estimatedTimeInput.value;

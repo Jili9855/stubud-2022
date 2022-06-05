@@ -8,7 +8,7 @@ This software is designed for promote learning habits. Users allow to set and pr
  * __Reference__
 
 
-# Change of design brief
+## Change of design brief
 My original idea in the previous design brief was to design a language learning software where the user could look up words using a dictionary and set time tracking to help them more concentration. However, I delete the time tracking idea, I thought if users who want to set study times, I think they may prefer to use them on their mobile phones rather than the web side. Thus, the final web application will be more focus on task management and music player those two features.
 
 * __screenshot of the layout change__
@@ -18,6 +18,11 @@ orginal layout
 
 new layout
 ![image](./readmeimg/2.png)
+
+
+## Description
+
+the detail description of the code I use
 
 * __Folded menu bar__
 
@@ -131,3 +136,58 @@ I have added hyperlinks to the text in the menu bar so that the user can click o
     color: rgb(161, 166, 252);
 }
 ```
+
+* __Form validation__
+
+By studying [Chengjun's](https://chinese.freecodecamp.org/news/form-validation-with-html5-and-javascript/) code, I used JavaScript to validate the data entered by the user in the submit form. Verify that the data entered by the user is it empty or correct email address?
+
+Triggers the submission of the form by clicking on it, while using document.getElementById looks for the user's input value and store the value entered by the user in the UserNameField.
+
+```javascript
+submit.addEventListener("click", validate);
+
+function validate(e) {
+  e.preventDefault();
+
+  const UserNameField = document.getElementById("firstname");
+  let valid = true;
+
+  if (!UserNameField.value) {
+ ........
+  }
+  
+  return valid;
+}
+```
+Once the input is incorrect, javascript will run those function an error message will pop up until return valid value.
+
+```javascript
+ if (!UserNameField.value) {
+    const nameError = document.getElementById("nameError");
+    nameError.classList.add("loading");
+    UserNameField.classList.add("invalid");
+    nameError.setAttribute("aria-hidden", false);
+    nameError.setAttribute("aria-invalid", true);
+  }
+```
+
+
+
+### Reference
+  3D form validation. (n.d.). Retrieved June 5, 2022, from CodePen website: https://codepen.io/soulrider911/pen/DdeGao
+
+  Alien, A. (n.d.). Sticky responsive sidenav. Retrieved June 5, 2022, from CodePen website: https://codepen.io/areal_alien/pen/BaRpxdX
+
+  Bohannon. (n.d.). 网易云音乐. Retrieved June 5, 2022, from 网易云音乐 website: https://music.163.com/#/song?id=2714997
+
+  Cha Cha Cha. (n.d.). Retrieved June 5, 2022, from Discogs website: https://www.discogs.com/release/572435-Finzy-Kontini-Cha-Cha-Cha
+
+  Chengjun.L. (2021, April 23). 数据验证——使用示例 javascript 代码检查 HTML 表单上的用户输入. FreeCodeCamp.Org. Retrieved from https://chinese.freecodecamp.org/news/form-validation-with-html5-and-javascript/
+
+  jpmersuglia. (2020, September 2). Build software better, together. Retrieved June 5, 2022, from GitHub website: https://github.com/jpmersuglia/responsive-cards-layout/projects?type=beta
+
+  Queen   I want to break free.mp3. (n.d.). Retrieved June 5, 2022, from Google Docs website: https://docs.google.com/file/d/0B0oHLwB1TKEmSG5fM3VhVUhLQjg/view?resourcekey=0-FmMQQr1Dwx_TOuVeXGObig
+
+  Slotnik, D. E. (2020, May 2). Hamilton Bohannon, driving disco drummer, dies at 78. The New York Times. Retrieved from https://www.nytimes.com/2020/05/02/arts/music/hamilton-bohannon-dead.html
+
+  Sticky responsive sidenav. (n.d.). Retrieved June 5, 2022, from CodePen website: https://codepen.io/areal_alien/pen/BaRpxdX
