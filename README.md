@@ -3,7 +3,7 @@ This software is designed for promote learning habits. Users allow to set and pr
 
 ## Contents of Readme File
  * __Change of design brief__
- * __Description__
+ * __Code Description__
  * __How to use__
  * __Reference__
 
@@ -20,9 +20,10 @@ new layout
 ![image](./readmeimg/2.png)
 
 
-## Description
+## Dode Description
 
 the detail description of the code I use
+The basic framework of the website I refer to some templates, refer to the following websites [CODEPEN](https://codepen.io/trending)
 
 * __Folded menu bar__
 
@@ -84,7 +85,7 @@ For the menu bar added a collapse effect, I didn't use js to achieve this, I ref
   }
 ```
 
-* __Card Layout__
+* __Homepage Card Layout__
 
 The card layout is also reference from [jpmersuglia, 2020](https://github.com/jpmersuglia/responsive-cards-layout.git)
 the card add :hover special styles to the mouse, so that when user's mouse put on the cards, it will change the color.
@@ -173,7 +174,7 @@ Once the input is incorrect, javascript will run those function an error message
 
 
 
-### Reference
+### Reference (APA6th)
   3D form validation. (n.d.). Retrieved June 5, 2022, from CodePen website: https://codepen.io/soulrider911/pen/DdeGao
 
   Alien, A. (n.d.). Sticky responsive sidenav. Retrieved June 5, 2022, from CodePen website: https://codepen.io/areal_alien/pen/BaRpxdX
