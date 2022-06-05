@@ -13,7 +13,7 @@ My original idea in the previous design brief was to design a language learning 
 
 * __screenshot of the layout change__
 orginal homepage layout
-![screenshot](/readmeimg/1.png)
+
 New homepage layout
 
 
