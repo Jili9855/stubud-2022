@@ -67,16 +67,20 @@ https://github.com/bradtraversy/vanillawebprojects-->
 
 <div class="music-container" id="music-container">
   <div class="music-info">
-    <h4 id="title"></h4>
+    <div id="title" class="musName">ChaChaCha - Place To Place</div>
     <div class="progress-container" id="progress-container">
       <div class="progress" id="progress"></div>
     </div>
   </div>
 
-  <audio src="song/music1.mp3" id="audio"></audio>
+  <audio src="song/music1.mp3" id="audio1" class="audio"></audio>
+  <audio src="song/music2.mp3" id="audio2" class="audio"></audio>
+  <audio src="song/music3.mp3" id="audio3" class="audio"></audio>
 
   <div class="img-container">
-    <img src="album_img/music1.jpg" alt="music-cover" id="cover" />
+    <img src="album_img/music1.jpg" alt="music-cover" class="cover" />
+    <img src="album_img/music2.jpg" style="display: none" alt="music-cover" class="cover" />
+    <img src="album_img/music3.jpg" style="display: none" alt="music-cover" class="cover" />
   </div>
   <div class="navigation">
     <button id="prev" class="action-btn">
@@ -89,13 +93,14 @@ https://github.com/bradtraversy/vanillawebprojects-->
       <i class="fas fa-forward"></i>
     </button>
   </div>
-</div
+</div>
 
 
 
 
 
 
+<script src="scss/components/music.js"></script>
 
   <script src="script.js"></script>
 </body>

@@ -1,47 +1,49 @@
-*{
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-box-sizing:border-box;
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -box-sizing: border-box;
 }
 
 #task-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "taskform tasklist";
-    // justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "taskform tasklist";
+  // justify-content: center;
 }
 
 #taskforms {
-    grid-area: taskform;
+  grid-area: taskform;
+  width: 100%;
+  position: static !important;
+  label {
+    display: grid;
     width: 100%;
-    label {
-        display: grid;
-        width: 100%;
-        padding: 10px;
-        margin: auto;
-    }
+    padding: 10px;
+    margin: auto;
+  }
 }
 
-.cardlayout{
-    width: 400px;
-    height: 500px;
-    display: flex;
-    background-color: #fff;
-    border-radius: 30px;
-    box-shadow: 0 2px 20px rgba(0,0,0,0.2);
-
-    margin-left: 10%;
-    margin-right: 10%;
-    align-items: center;
-    justify-content: center;
+.cardlayout {
+  width: 400px;
+  //height: 500px;
+  //display: flex;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: auto;
+  align-items: center;
+  //  justify-content: center;
+  //  flex-direction: column-reverse;
+  //flex-wrap: wrap;
 }
 
-#taskhead{
-    font-size: 45px;
-    border-left: 30px;
-    padding-top: 30px;
-    font-family:"Times New Roman";
-    text-align: center;
+#taskhead {
+  font-size: 45px;
+  border-left: 30px;
+  padding-top: 30px;
+  font-family: "Times New Roman";
+  text-align: center;
 }
 
