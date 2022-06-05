@@ -13,12 +13,11 @@ My original idea in the previous design brief was to design a language learning 
 
 * __screenshot of the layout change__
 
-orginal homepage layout
-![image](./public/readmeimg/1.png)
+orginal layout
+![image](./readmeimg/1.png)
 
-New homepage layout
-![image](./public/readmeimg/2.png)
-
+new layout
+![image](./readmeimg/2.png)
 
 * __Folded menu bar__
 
