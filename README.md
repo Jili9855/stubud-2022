@@ -262,6 +262,10 @@ actionBtnAll[2].onclick = function(){
     title.innerText = musicName[musicIndex]
 }
 ```
+* __Focusing Time__
+The time setting reference from [GSPTeck](https://dev.to/gspteck/create-a-stopwatch-in-javascript-2mak)
+
+
 
 ## How To Use
 User can create thir own learning task by setting task name, completion time and setting priority
