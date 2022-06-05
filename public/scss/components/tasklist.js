@@ -59,9 +59,9 @@ function renderTask(task){
   })
 
 
-  // Clear the input form
-//   form.reset();
-// }
+ // Clear the input form
+  form.reset();
+}
 
 function myFunction() {
   document.getElementById("reset").reset();
