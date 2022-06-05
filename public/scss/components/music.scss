@@ -32,7 +32,7 @@ https://www.youtube.com/watch?v=QTHRWGn_sJw
 
 .img-container::after {
   content: '';
-  background-color: #fff;
+  background-color: rgb(201, 165, 165);
   border-radius: 50%;
   position: absolute;
   bottom: 100%;
@@ -78,17 +78,17 @@ https://www.youtube.com/watch?v=QTHRWGn_sJw
 }
 
 .action-btn {
-  background-color: #fff;
+  background-color: rgb(210, 192, 192);
   border: 0;
-  color: #dfdbdf;
-  font-size: 25px;
+  color: #373537;
+  font-size: 30px;
   cursor: pointer;
   padding: 10px;
   margin: 20px 100px;
 }
 
 .action-btn.action-btn-big {
-  color: #cdc2d0;
+  color: #0e0e0f;
   font-size: 30px;
 }
 
@@ -97,7 +97,7 @@ https://www.youtube.com/watch?v=QTHRWGn_sJw
 }
 
 .music-info {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(208, 165, 165, 0.5);
   border-radius: 15px 15px 0 0;
   position: absolute;
   top: 0;
@@ -135,9 +135,9 @@ https://www.youtube.com/watch?v=QTHRWGn_sJw
   width: 0%;
   transition: width 0.1s linear;
 }
-#musName{
-  color: #000 !important;
-  position: absolute !important;
-  top: 0 !important;
-  left: 50%!important;
-}
+// #musName{
+//   color: #000 !important;
+//   position: absolute !important;
+//   top: 0 !important;
+//   left: 50%!important;
+// }
