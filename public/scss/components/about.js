@@ -1,88 +1,57 @@
-// $(function(){
-//     var email = $("#user email");
-//     var name = $("#user name");
-
-//     function validate(field){
-//         if(field.val().length === 0){
-//             field.removeClass().addClass("error");
-//             field.next().removeClass().addClass("icon-warning-sign");
-//         }else{
-//             field.removeClass().addClass("success");
-//             field.next().removeClass().addClass("icon-ok");
-//         }
-//         return field;
-//     }
-
-//     $('input').blur(function(){
-//         validate($(this));
-//     });
-
-//     $("button").on("click" , function(){
-//         validate(email);
-//         validate(name);
-//         if($(email).val().length === 0 || $(name).val().length === 0)
-//             $(this).removeClass().addClass("submit-error");
-//         else{
-//             $(this).removeClass().addClass("submit-success");
-//         }
-//         window.setTimeout(function(){
-//             console.log("done");
-//             $("button").removeClass();
-//         }, 3000)
-//         return false;
-//     });
-    
-// });
+/*reference from 
+https://chinese.freecodecamp.org/news/form-validation-with-html5-and-javascript/
+by chengjun.L
+*/
 
 
-var nameInput = document.getElementById("username");
-var emailInput = document.getElementById("useremail");
+// Used to verify the type of data entered by the user
+// const submit =document.getElementById('sumbit');
 
+submit.addEventListener("click", validate);
 
-form.addEventListener("submit", function(event){
-    event.preventDefault();
-    let username = usernameInput.value;
-    let useremail = useremailInput.value;
-    addTask(username,useremail, false);
-    console.log(taskList);
-  })
+function validate(e) {
+  e.preventDefault();
 
+  const UserNameField = document.getElementById("firstname");
+  const UserEmailField = document.getElementById("email");
+  const UserPhoneField = document.getElementById("phone");
+  let valid = true;
 
-  var taskListArray = [];
+  if (!UserNameField.value) {
+    const nameError = document.getElementById("nameError");
+    nameError.classList.add("loading");
+    UserNameField.classList.add("invalid");
+    nameError.setAttribute("aria-hidden", false);
+    nameError.setAttribute("aria-invalid", true);
+  }
+  if (!UserEmailField.value) {
+    const emailError = document.getElementById("EmailError");
+    nameError.classList.add("loading");
+    UserEmailField.classList.add("invalid");
+    nameError.setAttribute("aria-hidden", false);
+    nameError.setAttribute("aria-invalid", true);
+  }
+  if (!UserPhoneField.value) {
+    const phoneError = document.getElementById("PhoneError");
+    nameError.classList.add("loading");
+    UserEmailField.classList.add("invalid");
+    nameError.setAttribute("aria-hidden", false);
+    nameError.setAttribute("aria-invalid", true);
+  }
 
-function addTask(username,useremail) {
-  let d = new Date();
-  let dateCreated = d.getFullYear();
-  let infos = {
-    username,
-    useremail
-  };
-  taskListArray.push(infos);
-  renderTask(infos);
+  return valid;
 }
 
-function renderTask(infos){
-    // Create HTML elements
-    let item = document.createElement("li");
-    item.innerHTML = "<p>" + infos.taskDescription + "</p>";
-  
-    tasklist.appendChild(item);
-  
-    // Extra Task DOM elements
-    let delButton = document.createElement("button");
-    let delButtonText = document.createTextNode("Delete Task");
-    delButton.appendChild(delButtonText);
-    item.appendChild(delButton);
-  
-  
-    // Event Listeners for DOM elements
-    delButton.addEventListener("click", function(event){
-      event.preventDefault();
-      item.remove();
-    })
-  
-  
-    // Clear the input form
-    form.reset();
-  }
-  
+/*using javascript to verify that the data entered by the user is "valid"
+*/
+const UserNameField = document.querySelector("input");
+nameField.addEventListener("input", () => {
+  nameField.setCustomValidity("");
+  nameField.checkValidity();
+  console.log(nameField.checkValidity());
+});
+
+nameField.addEventListener("invalid", () => {
+  nameField.setCustomValidity("Please fill in your First Name.");
+});
+

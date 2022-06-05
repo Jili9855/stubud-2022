@@ -1,5 +1,20 @@
 //reference
 
+#nameError {
+	display: none;
+	font-size: 0.8em;
+  }
+  
+  #nameError.loading {
+	display: block;
+  }
+  
+  input.invalid {
+	border-color: red;
+  }
+
+
+
 .field{
 	position: relative;
 }
@@ -11,7 +26,12 @@
 }
 form{
 	width: 500px;
-	margin: 0 auto;
+	height: 100%;
+	// margin: 0 auto;
+	position:absolute;
+	left:200;
+	right: 300;
+	top:20;
 }
 input, button, textarea{
 	position: relative;
