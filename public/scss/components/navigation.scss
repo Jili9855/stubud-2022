@@ -1,4 +1,5 @@
-/* <------this is the navigation bar lay out rafernence from https://codepen.io/areal_alien/pen/BaRpxdX
+/* <------this is the navigation bar lay out rafernence from 
+https://codepen.io/areal_alien/pen/BaRpxdX
 created by Areal Alien--------> */
 
 
@@ -6,8 +7,6 @@ html, body {
     height: 100%;
     width: 50%;
   }
-  
-  
   :root {
       --primary: 237, 94%, 81%;
       --background: 266, 16%, 92%;
@@ -33,10 +32,7 @@ html, body {
   }
   
 
-  
-  /* ===============
-      Global Styles
-     =============== */
+  /*Global Styles */
   
   *, *::before, *::after {
       box-sizing: inherit;
@@ -51,11 +47,7 @@ html, body {
       scroll-behavior: smooth;
       box-sizing: border-box;
   }
-  
-
-
-
-  
+    
   /* Headings */
   h1, h2, h3, h4, h5, h6 {
       margin: 0;
@@ -88,21 +80,8 @@ html, body {
   }
 
   
-
-
-  
-
-  
   /* =========
-      Classes
-     ========= */
-  
-  /* ================
-      Global classes
-     ================ */
-  
-  /* =========
-      Flexbox for the menu 
+      folded menu bar
      ========= */
   .flexbox {
       display: flex;
@@ -225,11 +204,6 @@ html, body {
       opacity: 0;
       
   }
-//   #navbar:hover .link-text {
-//       width: calc(100% - calc(5rem - 8px));
-//       opacity: 3;
-//       color: white;
-//   }
     .link-text {
       width: calc(100% - calc(5rem - 8px));
       opacity: 3;
