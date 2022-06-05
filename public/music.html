@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <title>Music Player</title>
     <link href="scss/main.scss" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
 </head>
 
 <body>
@@ -61,12 +61,47 @@
 
 
 
-<!-- the music player refernecen from:  -->
+ <!-- the music player refernecen from: 
+https://github.com/bradtraversy/vanillawebprojects-->
+<h1>Music Player Tool</h1>
+
+<div class="music-container" id="music-container">
+  <div class="music-info">
+    <div id="title" class="musName">ChaChaCha - Place To Place</div>
+    <div class="progress-container" id="progress-container">
+      <div class="progress" id="progress"></div>
+    </div>
+  </div>
+
+  <audio src="song/music1.mp3" id="audio1" class="audio"></audio>
+  <audio src="song/music2.mp3" id="audio2" class="audio"></audio>
+  <audio src="song/music3.mp3" id="audio3" class="audio"></audio>
+
+  <div class="img-container">
+    <img src="album_img/music1.jpg" alt="music-cover" class="cover" />
+    <img src="album_img/music2.jpg" style="display: none" alt="music-cover" class="cover" />
+    <img src="album_img/music3.jpg" style="display: none" alt="music-cover" class="cover" />
+  </div>
+  <div class="navigation">
+    <button id="prev" class="action-btn">
+      <i class="fas fa-backward"></i>
+    </button>
+    <button id="play" class="action-btn action-btn-big">
+      <i class="fas fa-play"></i>
+    </button>
+    <button id="next" class="action-btn">
+      <i class="fas fa-forward"></i>
+    </button>
+  </div>
+</div>
 
 
 
 
-  <script src="./scss/components/playduaio.js"></script>
+
+
+<script src="scss/components/music.js"></script>
+
   <script src="script.js"></script>
 </body>
 </html>

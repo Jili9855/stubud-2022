@@ -1,5 +1,3 @@
-/*reference from tutorial */
-
 const form = document.getElementById("taskform");
 const button = document.querySelector("#taskform > button")
 var taskInput = document.getElementById("taskInput");
@@ -12,7 +10,7 @@ var priorityInput = document.getElementById("priorityInput");
 
 form.addEventListener("submit", function(event){
   event.preventDefault();
-  let name  = taskInput.value;  
+  let name  = taskInput.value;  //let name = id.value
   let dueDate = dueDateInput.value;
   let completionTime = completionTimeInput.value;
   let estimatedTime = estimatedTimeInput.value;
@@ -61,9 +59,9 @@ function renderTask(task){
   })
 
 
- // Clear the input form
-  form.reset();
-}
+  // Clear the input form
+//   form.reset();
+// }
 
 function myFunction() {
   document.getElementById("reset").reset();

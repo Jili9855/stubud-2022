@@ -21,6 +21,11 @@ request.onload = function() {
 
     // Loop through each item in the returned array
     data.forEach(function(movie) {
+      // console.log(movie) // Uncomment to see each array item stored as movie
+
+      /* ------------------------------------------------------
+      Create and configure the HTML elements to house the data
+      ------------------------------------------------------ */
 
       // Card container
       let card = document.createElement('div');
