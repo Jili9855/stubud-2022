@@ -1,4 +1,5 @@
-// control the music play and pause, next and pev song 
+/* the music player reference from
+https://github.com/bradtraversy/vanillawebprojects/tree/master/music-player*/
 
 // Select all the elements in the music.html page and assign them to a variable
 let cover = document.querySelectorAll(".cover")
